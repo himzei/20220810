@@ -5,71 +5,103 @@
   <title>20220810 HTML 기초 실습</title>
   <!-- CSS 실습 -->
   <style>
-    h1 {
-      color: darkblue;
+    html {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px; 
+      font-weight: normal;
+      color: #4d5058;
+      line-height: 24px;
     }
-
-    h3 {
-      color: tomato;
+    body {
+      margin: 0;
+      
     }
-
-    h3:first-of-type {
-      background-color: blue;
+    
+    a {
+      color: #1e87f0; 
+      text-decoration: none; 
     }
-
-    p {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-weight: 700;
+    a:hover{
+      color: #0f6ecd;
+      text-decoration: underline;
     }
+    .menuBar {
+      padding: 20px;
+      color: white;
+      font-weight: 600;
+      background-color: tomato;
+    }
+    .menuBar span {
+      margin-right: 20px;
+    }
+    h2 {
+      margin-left: 20px;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    div{
+      
+      margin-bottom: 30px; 
+    }
+    .tail{
+      text-align: center;
+      background-color: tomato;
+      padding: 10px;
+      color: white;
+    }
+    div img {
+      margin: 10px;
+    }
+    
   </style>
 </head>
 
 <body>
-  <!-- 텍스트 관련 태그2: pre 태그 => 소스에 표시한 공백이 그대로 표시됨 -->
-  <!-- 텍스트 관련 태그4: p태그 => 단락 태그 -->
-  <p>
-    1. 동해 물과 백두산이 마르고 닳도록<br>
-    하느님이 보우하사 우리나라 만세.<br>
-    무궁화 삼천리 화려 강산<br>
-    대한 사람, 대한으로 길이 보전하세.
-  </p>
+  <div class="menuBar">
+    <span>Profile</span>
+    <span>Skills</span>
+    <span>Gallery</span>
+    <span>Links</span>
+    <span>Board</span>
+  </div>
+  <div>
+    <h2>Profile</h2>
+    <ul>
+      <li>이름: 조현일</li>
+      <li>81년 6월 30일</li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <div>
+    <h2>Skills</h2>
+    <ul>
+      <li>html, css, js</li>
+      <li>Photoshop, Illustrator</li>
+      <li>Python Django</li>
+      <li>React NodeJS</li>
+      <li>Typescript</li>
+    </ul>
+  </div>
+  <div>
+    <h2>Gallery</h2>
+    <img src="https://images.unsplash.com/photo-1659984085775-d620f7257927?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" width="300" />
+    <img src="https://images.unsplash.com/photo-1660039031080-7779c1760a0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" width="300" />
 
-  <p>
-    2. 남산 위에 저 소나무, 철갑을 두른 듯<br>
-    바람 서리 불변함은 우리 기상일세.<br>
-    무궁화 삼천리 화려 강산<br>
-    대한 사람, 대한으로 길이 보전하세.
-  </p>
-
-  <pre>
-    3. 가을 하늘 공활한데 높고 구름 없이<br>
-    밝은 달은 우리 가슴 일편단심일세.<br>
-    무궁화 삼천리 화려 강산<br>
-    대한 사람, 대한으로 길이 보전하세.<br>
-  
-    4. 이 기상과 이 맘으로 충성을 다하여<br>
-    괴로우나 즐거우나 나라 사랑하세.<br>
-    무궁화 삼천리 화려 강산<br>
-    대한 사람, 대한으로 길이 보전하세.<br>
-  </pre>
-
-
-  <!-- 텍스트 관련 태그  -->
-  <h1>HTML 기초실습</h1>
-  <h2>HTML 기초실습</h2>
-  <h3>HTML 기초실습</h3>
-  <h4>HTML 기초실습</h4>
-  <h5>HTML 기초실습</h5>
-  <h6>HTML 기초실습</h6>
-
-  <h3>텍스트 삽입</h3>
-
-  <p>안녕 HTML</p>
-  <h3>이미미 삽입</h3>
-  <hr>
-
-  <!-- img 이미지를 삽입하는 태그 src 속성 -->
-  <img src="images/index_coffee.jpg" alt="coffee" width="300" />
+    <img src="https://images.unsplash.com/photo-1657299156271-d5a435dd65b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" width="300" />
+  </div>
+  <div>
+    <h2>Links</h2>
+    <ul>
+      <li>http://unsplash.com</li>
+      <li>https://www.naver.com</li>
+      <li>https://www.google.com</li>
+    </ul>
+  </div>
+  <div class="tail">
+    <p>&#169;
+      2022 by ken Jo for more information himzei@gmail.com</p>
+  </div>
 </body>
 
 </html>
